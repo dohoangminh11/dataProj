@@ -1,0 +1,11 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "normalized": true,
+  "document_hashes": {
+    "8198": "b0153e7d4b7da222b6abb00721b231260b5f4a0bed09b58771e9f2e20cdf9a3e",
+    "28003": "df1c1f427bcd2a9f03ff5e68bc4d84a77d1b0d3ad7e1db2efad2aa5abca0300b",
+    "68290": "0927fc137ff40dbffb0dad0ebdf6e39b19d11bb93eda97b810a0df76b94f2a77",
+    "342229": "dd73d524b316ece0c619280625e4cfc47c43527b2835a26bfd124c3db1a16ce0",
+    "937958": "0da450356d25502f947cea2fed487f0b70e9f613b6f1f685d6f550d18c563a34"
+  }
+}
