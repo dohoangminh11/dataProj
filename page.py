@@ -19,15 +19,6 @@ st.markdown(
             padding-top: 2.5rem;
             padding-bottom: 3rem;
         }
-        [data-testid="stMetric"] {
-            background: #f7f8fa;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 1rem;
-        }
-        [data-testid="stMetricLabel"] {
-            color: #5f6672;
-        }
     </style>
     """,
     unsafe_allow_html=True,
@@ -170,13 +161,33 @@ largest_drop = (
 )
 
 peak_col, first_col, latest_col = st.columns(3)
-peak_col.metric("Peak Value", format_value(peak_year["market_value_in_eur"]))
-first_col.metric("First Value", format_value(first_year["market_value_in_eur"]))
-latest_col.metric("Latest", format_value(latest_year["market_value_in_eur"]))
+peak_col.metric(
+    "Peak Value",
+    format_value(peak_year["market_value_in_eur"]),
+    border=True,
+)
+first_col.metric(
+    "First Value",
+    format_value(first_year["market_value_in_eur"]),
+    border=True,
+)
+latest_col.metric(
+    "Latest",
+    format_value(latest_year["market_value_in_eur"]),
+    border=True,
+)
 
 rise_col, drop_col, spacer_col = st.columns(3)
-rise_col.metric("Largest Rise", format_percentage(largest_rise))
-drop_col.metric("Largest Drop", format_percentage(largest_drop))
+rise_col.metric(
+    "Largest Rise",
+    format_percentage(largest_rise),
+    border=True,
+)
+drop_col.metric(
+    "Largest Drop",
+    format_percentage(largest_drop),
+    border=True,
+)
 spacer_col.empty()
 
 st.subheader("Market value evolution")
