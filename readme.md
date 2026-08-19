@@ -40,7 +40,7 @@ python -m venv .venv
 Install the required packages:
 
 ```powershell
-python -m pip install pandas kagglehub matplotlib streamlit altair
+python -m pip install -r requirements.txt
 ```
 
 ## Run the project
